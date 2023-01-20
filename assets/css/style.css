@@ -513,9 +513,17 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Interests
+# Languages, Technologies, and Other Skills
 --------------------------------------------------------------*/
-.interests .icon-box {
+.image {
+  width: 24;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.languages .icon-box,
+.technologies .icon-box,
+.other_skills .icon-box {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -523,13 +531,17 @@ section .container {
   transition: ease-in-out 0.3s;
 }
 
-.interests .icon-box i {
+.languages .icon-box i,
+.technologies .icon-box i,
+.other_skills .icon-box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
 }
 
-.interests .icon-box h3 {
+.languages .icon-box h3,
+.technologies .icon-box h3,
+.other_skills .icon-box h3 {
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -538,9 +550,12 @@ section .container {
   color: #fff;
 }
 
-.interests .icon-box:hover {
+.languages .icon-box:hover,
+.technologies .icon-box:hover,
+.other_skills .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials
