@@ -10,10 +10,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
   color: #fff;
   position: relative;
-  background: transparent;
 }
 
 body::before {
@@ -243,7 +241,6 @@ h6 {
   left: 0;
   background-color: #D8315B;
   visibility: hidden;
-  width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -390,7 +387,6 @@ section .container {
 }
 
 .section-title p {
-  margin: 0;
   margin: -15px 0 15px 0;
   font-size: 36px;
   font-weight: 700;
@@ -516,7 +512,7 @@ section .container {
 # Languages, Technologies, and Other Skills
 --------------------------------------------------------------*/
 .image {
-  width: 24;
+  width: 24px;
   height: 24px;
   margin-right: 12px;
 }
@@ -618,7 +614,6 @@ section .container {
   background: rgba(255, 255, 255, 0.1);
   position: relative;
   border-radius: 6px;
-  position: relative;
   z-index: 1;
 }
 
@@ -710,7 +705,6 @@ section .container {
 }
 
 .services .icon-box .icon {
-  margin: 0 auto;
   width: 64px;
   height: 64px;
   background: #D8315B;
@@ -719,7 +713,7 @@ section .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   transform-style: preserve-3d;
 }
 
@@ -779,6 +773,16 @@ section .container {
   color: #fff;
 }
 
+.services ul {
+  text-align: start;
+  font-size: 0.8em;
+}
+
+.services p {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -787,7 +791,6 @@ section .container {
 }
 
 .portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
   text-align: center;
