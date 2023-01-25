@@ -35,7 +35,6 @@ if (!preg_match(
     $email_address)) {
     $errors .= "\n Error: Invalid email address";
 }
-
 if (empty($errors)) {
     $to = $receiving_email_address;
     $email_subject = "Contact form submission: $name and the subject: $subject";
@@ -46,15 +45,17 @@ if (empty($errors)) {
     $headers .= "Reply-To: $email_address";
 
     mail($to, $email_subject, $email_body, $headers);
-    echo "<div class='sent-message' id='sent-message'>'Your message has been sent. Thank you'</div>";
-    echo "<script>setTimeout(function(){
-    document.getElementById('sent-message').innerHTML = '';
+    echo "<script>
+ sent = document.getElementById('sent-message').innerHTML = 'Your message has been sent. Thank you';
+setTimeout(function(){
+     sent.innerHTML = '';
 }, 3000)</script>";
     //redirect to the 'thank you' page
 //    header('Location: contact-form-thank-you.html');
 } else {
-    echo "<div class='error-message' id='error-message'>$errors</div>";
-    echo "<script>setTimeout(function(){
+    echo "<script>
+error = document.getElementById('error-message').innerHTML = $errors;
+setTimeout(function(){
     document.getElementById('error-message').innerHTML = '';
 }, 3000)</script>";
 }
