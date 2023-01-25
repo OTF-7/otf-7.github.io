@@ -79,10 +79,10 @@
         // temporary
         thisForm.querySelector('.sent-message').innerHTML = "Your message has been sent. Thank you";
         thisForm.querySelector('.sent-message').classList.add('d-block');
+        thisForm.reset();
         setTimeout(function () {
-            thisForm.reset();
             thisForm.querySelector('.sent-message').classList.remove('d-block');
-        }, 3000)
+        }, 5000)
     }
 
 })();
