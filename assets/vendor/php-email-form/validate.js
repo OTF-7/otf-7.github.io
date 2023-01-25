@@ -74,8 +74,11 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    // thisForm.querySelector('.error-message').innerHTML = error;
+    // thisForm.querySelector('.error-message').classList.add('d-block');
+    // temporary
+    thisForm.querySelector('.sent-message').innerHTML = "Your message has been sent. Thank you";
+    thisForm.querySelector('.sent-message').classList.add('d-block');
   }
 
 })();
